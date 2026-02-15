@@ -28,7 +28,7 @@ public partial class Player : CharacterBody2D
 		velocity.Y = (direction.Y != 0) ? direction.Y * Speed : Mathf.MoveToward(Velocity.Y, 0, Speed);
 		if (direction.X != 0)
 		{
-			var s = Mathf.Round(direction.X);
+			var s = direction.X > 0 ? 1 : -1;
 			Visuals.Scale = new Vector2(s,1);
 		}
 		Velocity = velocity;

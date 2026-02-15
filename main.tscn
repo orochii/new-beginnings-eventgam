@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://bn37d05renqy4"]
+[gd_scene format=3 uid="uid://bn37d05renqy4"]
 
 [ext_resource type="Script" uid="uid://dtwd6cue6ibao" path="res://src/Player.cs" id="1_272bh"]
 [ext_resource type="Texture2D" uid="uid://d3v1aw4hna6x" path="res://parts/body/body1.png" id="1_ig7tw"]
@@ -49,10 +49,6 @@ animations = [{
 atlas = ExtResource("2_h2yge")
 region = Rect2(0, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_w48qg"]
-atlas = ExtResource("2_h2yge")
-region = Rect2(64, 0, 16, 16)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_7mycd"]
 atlas = ExtResource("2_h2yge")
 region = Rect2(16, 0, 16, 16)
@@ -65,19 +61,12 @@ region = Rect2(32, 0, 16, 16)
 atlas = ExtResource("2_h2yge")
 region = Rect2(48, 0, 16, 16)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_w48qg"]
+atlas = ExtResource("2_h2yge")
+region = Rect2(64, 0, 16, 16)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_kek77"]
 animations = [{
-"frames": [{
-"duration": 24.0,
-"texture": SubResource("AtlasTexture_lquwl")
-}, {
-"duration": 2.0,
-"texture": SubResource("AtlasTexture_w48qg")
-}],
-"loop": true,
-"name": &"attack",
-"speed": 8.0
-}, {
 "frames": [{
 "duration": 4.0,
 "texture": SubResource("AtlasTexture_lquwl")
@@ -90,6 +79,17 @@ animations = [{
 }, {
 "duration": 2.0,
 "texture": SubResource("AtlasTexture_5vw27")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 24.0,
+"texture": SubResource("AtlasTexture_lquwl")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_w48qg")
 }],
 "loop": true,
 "name": &"default",
@@ -164,60 +164,59 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" unique_id=1135496707]
 texture_filter = 1
 texture_repeat = 1
 
-[node name="Player" type="CharacterBody2D" parent="." node_paths=PackedStringArray("Visuals")]
+[node name="Player" type="CharacterBody2D" parent="." unique_id=1841223553 node_paths=PackedStringArray("Visuals")]
 position = Vector2(178, 112)
 script = ExtResource("1_272bh")
 Visuals = NodePath("Visuals")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1436162430]
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_7mycd")
 
-[node name="Visuals" type="Node2D" parent="Player" node_paths=PackedStringArray("Sprites")]
+[node name="Visuals" type="Node2D" parent="Player" unique_id=453897952 node_paths=PackedStringArray("Sprites")]
 script = ExtResource("2_5vw27")
-Sprites = [NodePath("Dorsal"), NodePath("Body"), NodePath("Body/Head"), NodePath("Body/Head/Horn"), NodePath("Body/Head/Neck"), NodePath("Body/Tail"), NodePath("Body/Sides")]
+Sprites = []
 Palette1 = ExtResource("4_dg77c")
 Palette2 = ExtResource("5_ycdy4")
 Palette3 = ExtResource("6_w48qg")
 
-[node name="Dorsal" type="AnimatedSprite2D" parent="Player/Visuals"]
+[node name="Dorsal" type="AnimatedSprite2D" parent="Player/Visuals" unique_id=1266428575]
 material = SubResource("ShaderMaterial_4c57u")
 position = Vector2(-5, -8)
 sprite_frames = SubResource("SpriteFrames_4c57u")
 
-[node name="Body" type="AnimatedSprite2D" parent="Player/Visuals"]
+[node name="Body" type="AnimatedSprite2D" parent="Player/Visuals" unique_id=2143234124]
 material = SubResource("ShaderMaterial_4c57u")
 position = Vector2(-5, 0)
 sprite_frames = SubResource("SpriteFrames_0xm2m")
 
-[node name="Head" type="AnimatedSprite2D" parent="Player/Visuals/Body"]
+[node name="Head" type="AnimatedSprite2D" parent="Player/Visuals/Body" unique_id=1270904190]
 material = SubResource("ShaderMaterial_4c57u")
 position = Vector2(16, 0)
 sprite_frames = SubResource("SpriteFrames_kek77")
-animation = &"attack"
 autoplay = "default"
-frame_progress = 0.22751841
 
-[node name="Horn" type="AnimatedSprite2D" parent="Player/Visuals/Body/Head"]
+[node name="Horn" type="AnimatedSprite2D" parent="Player/Visuals/Body/Head" unique_id=591335737]
 material = SubResource("ShaderMaterial_4c57u")
 position = Vector2(3, -4)
 sprite_frames = SubResource("SpriteFrames_w48qg")
+animation = &"attack"
 autoplay = "default"
 
-[node name="Neck" type="AnimatedSprite2D" parent="Player/Visuals/Body/Head"]
+[node name="Neck" type="AnimatedSprite2D" parent="Player/Visuals/Body/Head" unique_id=217563842]
 material = SubResource("ShaderMaterial_4c57u")
 sprite_frames = SubResource("SpriteFrames_7mycd")
 
-[node name="Tail" type="AnimatedSprite2D" parent="Player/Visuals/Body"]
+[node name="Tail" type="AnimatedSprite2D" parent="Player/Visuals/Body" unique_id=1241499075]
 material = SubResource("ShaderMaterial_4c57u")
 position = Vector2(-16, 0)
 sprite_frames = SubResource("SpriteFrames_272bh")
 
-[node name="Sides" type="AnimatedSprite2D" parent="Player/Visuals/Body"]
+[node name="Sides" type="AnimatedSprite2D" parent="Player/Visuals/Body" unique_id=762078418]
 material = SubResource("ShaderMaterial_4c57u")
 position = Vector2(2, 5)
 sprite_frames = SubResource("SpriteFrames_5vw27")
