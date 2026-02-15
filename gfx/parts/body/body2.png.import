@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckwpw32h4wbex"
-path="res://.godot/imported/horn2.png-3848c24ef77e27b65c7759f4bf454f7b.ctex"
+uid="uid://qlletast0ilh"
+path="res://.godot/imported/body2.png-b67a20c64bdfde69c7c261d607070659.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://parts/horn/horn2.png"
-dest_files=["res://.godot/imported/horn2.png-3848c24ef77e27b65c7759f4bf454f7b.ctex"]
+source_file="res://gfx/parts/body/body2.png"
+dest_files=["res://.godot/imported/body2.png-b67a20c64bdfde69c7c261d607070659.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2u1apngwr63"
-path="res://.godot/imported/dorsal1.png-17d77a08bc0c56e61c9b1c663793a2e3.ctex"
+uid="uid://c2hdpr72a14hn"
+path="res://.godot/imported/palette1.png-1acecd386255117d5e6338d172683373.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://parts/dorsal/dorsal1.png"
-dest_files=["res://.godot/imported/dorsal1.png-17d77a08bc0c56e61c9b1c663793a2e3.ctex"]
+source_file="res://gfx/palettes/palette1.png"
+dest_files=["res://.godot/imported/palette1.png-1acecd386255117d5e6338d172683373.ctex"]
 
 [params]
 

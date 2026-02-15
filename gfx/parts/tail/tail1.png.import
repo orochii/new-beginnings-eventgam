@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0w8puq2vbq5n"
-path="res://.godot/imported/horn1.png-58cd492b96bb6bad0293895e29496034.ctex"
+uid="uid://bqxjy1b815xb3"
+path="res://.godot/imported/tail1.png-8b78ebfc9adf53d01f6d1df781c93ad5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://parts/horn/horn1.png"
-dest_files=["res://.godot/imported/horn1.png-58cd492b96bb6bad0293895e29496034.ctex"]
+source_file="res://gfx/parts/tail/tail1.png"
+dest_files=["res://.godot/imported/tail1.png-8b78ebfc9adf53d01f6d1df781c93ad5.ctex"]
 
 [params]
 

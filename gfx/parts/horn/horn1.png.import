@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2hdpr72a14hn"
-path="res://.godot/imported/palette1.png-33c59d635ff89dfdb8d09ed9f8cd0c50.ctex"
+uid="uid://d0w8puq2vbq5n"
+path="res://.godot/imported/horn1.png-2b03407814e1c7e9217176957fb75640.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://palettes/palette1.png"
-dest_files=["res://.godot/imported/palette1.png-33c59d635ff89dfdb8d09ed9f8cd0c50.ctex"]
+source_file="res://gfx/parts/horn/horn1.png"
+dest_files=["res://.godot/imported/horn1.png-2b03407814e1c7e9217176957fb75640.ctex"]
 
 [params]
 
